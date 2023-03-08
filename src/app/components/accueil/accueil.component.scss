@@ -1,8 +1,15 @@
 .colored-square {
- width: 80%;
   margin: auto;
-  padding: 5%;
+  padding: 2% 10%;
   height: 100vh;
 }
+.colored-square * {
+  margin-top: 2%;
+}
+#color-in {
+  height: auto;
+}
 
-
+#welcome{
+  text-align: center;
+}
