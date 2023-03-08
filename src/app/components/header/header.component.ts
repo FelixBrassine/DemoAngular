@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
+    currentDate: Date = new Date();
+    constructor() {
+      setInterval( () => this.currentDate = new Date(), 1000)
+    }
 }

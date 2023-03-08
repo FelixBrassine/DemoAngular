@@ -1,0 +1,22 @@
+<div class="colored-square" style.background-color="{{color}}">
+  <h2>Accueil</h2>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Quelle est votre couleur préférée</span>
+      <input type="color" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="color">
+    </div>
+
+
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" aria-label="Username" [(ngModel)]="name">
+      <span class="input-group-text">/</span>
+      <input type="number" class="form-control" placeholder="Age" aria-label="Server" min="1" max="120" [(ngModel)]="age">
+    </div>
+
+    <div>Bonjour {{name}} ! </div>
+
+    <div>{{responseAge()}} </div>
+
+  <div></div>
+
+</div>
