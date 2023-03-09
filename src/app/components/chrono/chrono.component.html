@@ -4,6 +4,6 @@
   <button type="button" class="btn btn-warning" (click)="stop()" >Pause</button>
   <button type="button" class="btn btn-secondary" (click)="reset()" >Reset</button>
   <div id="timer">
-    {{timerView}}
+    {{seconds | timer_format}}
   </div>
 </div>

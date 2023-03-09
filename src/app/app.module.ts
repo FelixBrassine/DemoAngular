@@ -8,6 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AccueilComponent } from './components/accueil/accueil.component';
 import {FormsModule} from "@angular/forms";
 import { ChronoComponent } from './components/chrono/chrono.component';
+import { MinMAJpipePipe } from './pipe/min-majpipe.pipe';
+import { TimerFormaterPipe } from './pipe/timer-formater.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ChronoComponent } from './components/chrono/chrono.component';
     HeaderComponent,
     FooterComponent,
     AccueilComponent,
-    ChronoComponent
+    ChronoComponent,
+    MinMAJpipePipe,
+    TimerFormaterPipe
   ],
   imports: [
     BrowserModule,
