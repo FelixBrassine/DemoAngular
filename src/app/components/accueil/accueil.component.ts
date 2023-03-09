@@ -7,17 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AccueilComponent {
   color:string ="#D4E8D4"
-  name:string = ""
-  age:number = 0;
+  name?:string
+  age!:number
   responseName(): string{
-    if (this.name.length<1){
+    if (this.name === undefined){
       return ""
     } else {
       return "Hello " + this.name + " !"
     }
   }
   responseAge(): string{
-    if (this.age === 0){
+    if (this.age === undefined){
       return ""
     }else if (this.age<18){
       return "Return at school little boy"

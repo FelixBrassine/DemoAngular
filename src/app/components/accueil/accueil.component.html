@@ -4,11 +4,11 @@
 
   <div class="input-group mb-3">
     <span class="input-group-text" id="basic-addon1">Quelle est votre couleur préférée</span>
-    <input id="color-in" type="color" class="form-control" placeholder="Name"  aria-describedby="basic-addon1" [(ngModel)]="color">
+    <input id="color-in" type="color" class="form-control" aria-describedby="basic-addon1" [(ngModel)]="color">
   </div>
 
   <div class="input-group mb-3">
-    <input type="text" class="form-control" aria-label="Username" [(ngModel)]="name">
+    <input type="text" class="form-control" placeholder="Name" [(ngModel)]="name">
     <span class="input-group-text">/</span>
     <input type="number" class="form-control" placeholder="age" aria-label="Server" min="1" max="120" [(ngModel)]="age">
   </div>
