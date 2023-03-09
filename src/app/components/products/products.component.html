@@ -1,0 +1,22 @@
+<div id="productList">
+  <h3>Product List</h3>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col">Brand</th>
+        <th scope="col">Model</th>
+        <th scope="col">Price</th>
+        <th scope="col">availablity</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr  scope="row" *ngFor="let item of productList" >
+        <td>{{item.brand}}</td>
+        <td>{{item.model}}</td>
+        <td>{{item.price}}</td>
+        <td *ngIf="item.stock>0 ; else elseBlock" >{{item.stock}}</td>
+        <ng-template #elseBlock><td>unavailable</td></ng-template>
+      </tr>
+      </tbody>
+    </table>
+</div>

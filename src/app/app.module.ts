@@ -10,6 +10,7 @@ import {FormsModule} from "@angular/forms";
 import { ChronoComponent } from './components/chrono/chrono.component';
 import { MinMAJpipePipe } from './pipe/min-majpipe.pipe';
 import { TimerFormaterPipe } from './pipe/timer-formater.pipe';
+import { ProductsComponent } from './components/products/products.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TimerFormaterPipe } from './pipe/timer-formater.pipe';
     AccueilComponent,
     ChronoComponent,
     MinMAJpipePipe,
-    TimerFormaterPipe
+    TimerFormaterPipe,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
