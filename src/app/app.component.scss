@@ -1,0 +1,21 @@
+nav {
+  background-color: rgb(100, 135, 100);
+  padding: 2%;
+}
+
+nav * {
+  font-weight: bold;
+}
+.nav-link:hover {
+  cursor: pointer;
+}
+.navbar-brand {
+  cursor: pointer;
+}
+
+.square {
+  display:none;
+}
+.selected {
+  display:block;
+}

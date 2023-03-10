@@ -1,0 +1,23 @@
+<div id="productList">
+  <h2>Pizza List</h2>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Ingredients</th>
+        <th scope="col">Price</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr  scope="row" *ngFor="let item of pizzaList" >
+        <td>{{item.brand}}</td>
+        <td>
+          <ul *ngFor="let ing of item.model">
+            <li>{{ing}}</li>
+          </ul>
+        </td>
+        <td>{{item.price}}</td>
+      </tr>
+      </tbody>
+    </table>
+</div>

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-accueil',
-  templateUrl: './accueil.component.html',
-  styleUrls: ['./accueil.component.scss']
+  selector: 'app-gadgets',
+  templateUrl: './gadgets.component.html',
+  styleUrls: ['./gadgets.component.scss']
 })
-export class AccueilComponent {
+export class GadgetsComponent {
   color:string ="#D4E8D4"
   name?:string
   age!:number

@@ -3,25 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { AccueilComponent } from './components/accueil/accueil.component';
+import { GadgetsComponent } from './components/gadgets/gadgets.component';
 import {FormsModule} from "@angular/forms";
 import { ChronoComponent } from './components/chrono/chrono.component';
 import { MinMAJpipePipe } from './pipe/min-majpipe.pipe';
 import { TimerFormaterPipe } from './pipe/timer-formater.pipe';
-import { ProductsComponent } from './components/products/products.component';
+import { MenuComponent } from './components/Menu/menu.component';
+import { HomelComponent } from './components/home/homel.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     FooterComponent,
-    AccueilComponent,
+    GadgetsComponent,
     ChronoComponent,
     MinMAJpipePipe,
     TimerFormaterPipe,
-    ProductsComponent
+    MenuComponent,
+    HomelComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
