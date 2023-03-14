@@ -1,0 +1,20 @@
+#exos {
+  min-height: 67vh;
+  margin: 2% 5% 7% 5%;
+  padding: 2% 10%;
+  background-color: rgb(212 232 212);
+}
+.colored-square {
+  min-height: 67vh;
+  padding: 2% 10%;
+  margin: 2% 5%;
+}
+.colored-square * {
+  margin-top: 2%;
+}
+#color-in {
+  height: auto;
+}
+#welcome{
+  text-align: center;
+}

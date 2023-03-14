@@ -1,0 +1,11 @@
+<div id="exos">
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Name" [(ngModel)]="name">
+    <span class="input-group-text">/</span>
+    <input type="number" class="form-control" placeholder="age" aria-label="Server" min="1" max="120" [(ngModel)]="age">
+  </div>
+  <div id="welcome">
+    <div>{{responseName()}}</div>
+    <div>{{responseAge()}}</div>
+  </div>
+</div>
