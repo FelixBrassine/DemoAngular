@@ -1,0 +1,17 @@
+<div id="shop">
+  <h4>En frigo</h4>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Ingredients</th>
+      <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr  *ngFor="let prod of enVente">
+      <td><button type="button" class="btn btn-outline-success" (click)="onClick(prod)"><</button></td>
+      <td>{{prod}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

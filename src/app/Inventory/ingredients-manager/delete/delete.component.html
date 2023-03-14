@@ -1,0 +1,17 @@
+<div id="delete">
+  <h4>Liste des ingrédients</h4>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Ingredients</th>
+      <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr  *ngFor="let ing of ingredientList">
+      <td>{{ing}}</td>
+      <td><button type="button" class="btn btn-outline-danger" (click)="onClick(ing)">x</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,11 @@
+#inventory {
+  display: flex;
+  justify-content: space-around;
+  min-height: 67vh;
+  margin: 2% 5% 7% 5%;
+  padding: 4% ;
+  background-color: rgb(212 232 212);
+}
+#inventory * {
+  width: 50%;
+}

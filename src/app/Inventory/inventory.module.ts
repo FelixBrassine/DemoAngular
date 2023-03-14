@@ -1,19 +1,29 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {FormsModule} from "@angular/forms";
-import { ShopComponent } from './accueil/shop/shop.component';
-import { StockComponent } from './accueil/stock/stock.component';
-import {AccueilComponent} from "./accueil/accueil.component";
+import { ShopComponent } from './store-manager/shop/shop.component';
+import { StockComponent } from './store-manager/stock/stock.component';
+import {InventoryRoutingModule} from "./inventory-routing.module";
+import { IngredientsManagerComponent } from './ingredients-manager/ingredients-manager.component';
+import { StoreManagerComponent } from './store-manager/store-manager.component';
+import {MainComponent} from "./main/main.component";
+import { AddComponent } from './ingredients-manager/add/add.component';
+import { DeleteComponent } from './ingredients-manager/delete/delete.component';
 
 @NgModule({
   declarations: [
     ShopComponent,
     StockComponent,
-    AccueilComponent
+    IngredientsManagerComponent,
+    StoreManagerComponent,
+    MainComponent,
+    AddComponent,
+    DeleteComponent
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    InventoryRoutingModule
   ]
 })
 export class InventoryModule { }

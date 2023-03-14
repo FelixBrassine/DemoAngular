@@ -1,0 +1,6 @@
+<router-outlet>
+  <div id="inventory">
+    <app-stock [stock]="enStock" (to-shop)="onToShop($event)"></app-stock>
+    <app-shop [enVente]="enVente" (to-stock)="onToStock($event)"></app-shop>
+  </div>
+</router-outlet>

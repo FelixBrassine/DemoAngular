@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GadgetComponent } from './gadget/gadget.component';
+import { MainComponent } from './main/main.component';
 import { ExoComponent } from './exo/exo.component';
 import {ChronoComponent} from "./chrono/chrono.component";
 import {GadgetRoutingModule} from "./gadget-routing.module";
@@ -12,7 +12,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 
 @NgModule({
   declarations: [
-    GadgetComponent,
+    MainComponent,
     ExoComponent,
     ChronoComponent,
     MinMAJpipePipe,

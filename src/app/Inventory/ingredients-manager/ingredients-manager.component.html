@@ -1,0 +1,6 @@
+<router-outlet>
+  <div id="inventory">
+    <app-add (add)="add($event)"></app-add>
+    <app-delete [ingredientList]="ingredientList" (delete)="delete($event)"></app-delete>
+  </div>
+</router-outlet>
