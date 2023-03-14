@@ -10,16 +10,16 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { GadgetModule} from "./gadget/gadget.module";
 import { HeaderComponent } from './components/header/header.component';
-import {InventoryModule} from "./inventory/inventory.module";
+import {InventoryModule} from "./Inventory/inventory.module";
 
 @NgModule({
   declarations: [
+    HeaderComponent,
     AppComponent,
     FooterComponent,
     MenuComponent,
     HomeComponent,
-    ContactComponent,
-    HeaderComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,

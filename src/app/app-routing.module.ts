@@ -7,7 +7,7 @@ import {HomeComponent} from "./components/home/home.component";
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'gadget', loadChildren: () => import('./gadget/gadget.module').then( m => m.GadgetModule)},
-  {path: 'inventory', loadChildren: () => import('./inventory/inventory.module').then( m => m.InventoryModule)},
+  {path: 'inventory', loadChildren: () => import('./Inventory/inventory.module').then( m => m.InventoryModule)},
   {path: 'menu', component: MenuComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'home', component: HomeComponent},
