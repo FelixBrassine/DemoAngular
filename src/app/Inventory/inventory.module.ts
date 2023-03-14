@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import {FormsModule} from "@angular/forms";
 import { ShopComponent } from './accueil/shop/shop.component';
 import { StockComponent } from './accueil/stock/stock.component';
-import {AccueilComponent} from "./accueil/accueil.component";
-
+import { AccueilComponent } from './accueil/accueil.component';
+import { InventoryRoutingModule } from './inventory-routing.module';
 @NgModule({
   declarations: [
     ShopComponent,
@@ -13,7 +13,8 @@ import {AccueilComponent} from "./accueil/accueil.component";
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    InventoryRoutingModule
   ]
 })
 export class InventoryModule { }
