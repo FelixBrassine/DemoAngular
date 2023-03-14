@@ -4,31 +4,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { GadgetsComponent } from './components/gadgets/gadgets.component';
 import {FormsModule} from "@angular/forms";
-import { ChronoComponent } from './components/chrono/chrono.component';
-import { MinMAJpipePipe } from './pipe/min-majpipe.pipe';
-import { TimerFormaterPipe } from './pipe/timer-formater.pipe';
-import { MenuComponent } from './components/Menu/menu.component';
-import { HomelComponent } from './components/home/homel.component';
+import { MenuComponent } from './menu/Menu/menu.component';
+import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { GadgetModule} from "./gadget/gadget.module";
+import { HeaderComponent } from './components/header/header.component';
+import {InventoryModule} from "./inventory/inventory.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    GadgetsComponent,
-    ChronoComponent,
-    MinMAJpipePipe,
-    TimerFormaterPipe,
     MenuComponent,
-    HomelComponent,
-    ContactComponent
+    HomeComponent,
+    ContactComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    GadgetModule,
+    InventoryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

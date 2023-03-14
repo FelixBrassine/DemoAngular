@@ -1,39 +1,5 @@
-<header>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand"  (click)="displayHome()">PizzaStock</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" (click)="displayMenu()">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="displayContact()">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="displayGadgets()">Gadgets</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
+<app-header></app-header>
 <body>
-<div class="square" [ngClass]="{'selected': selectedSquare == 0}">
-  <app-home></app-home>
-</div>
-<div class="square" [ngClass]="{'selected': selectedSquare == 1}">
-  <app-menu></app-menu>
-</div>
-<div class="square" [ngClass]="{'selected': selectedSquare == 2}">
-  <app-contact></app-contact>
-</div>
-<div class="square" [ngClass]="{'selected': selectedSquare == 3}">
-  <app-gadgets></app-gadgets>
-</div>
+  <router-outlet></router-outlet>
 </body>
 <app-footer></app-footer>

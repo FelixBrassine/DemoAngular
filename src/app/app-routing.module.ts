@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {GadgetsComponent} from "./components/gadgets/gadgets.component";
-import {MenuComponent} from "./components/Menu/menu.component";
+import {MenuComponent} from "./menu/Menu/menu.component";
+import {ContactComponent} from "./components/contact/contact.component";
+import {HomeComponent} from "./components/home/home.component";
 
 const routes: Routes = [
-  {path : 'gadgets', component : GadgetsComponent},
-  {path: 'menu', component : MenuComponent},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: 'gadget', loadChildren: () => import('./gadget/gadget.module').then( m => m.GadgetModule)},
+  {path: 'inventory', loadChildren: () => import('./inventory/inventory.module').then( m => m.InventoryModule)},
+  {path: 'menu', component: MenuComponent},
+  {path: 'contact', component: ContactComponent},
+  {path: 'home', component: HomeComponent},
 ];
 
 @NgModule({
