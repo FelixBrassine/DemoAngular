@@ -1,0 +1,33 @@
+<h4>Panier</h4>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Quantité</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr scope="row" *ngFor="let item of pizzaList" >
+      <td>{{item.pizza.brand}}</td>
+      <td>{{item.quantity}}</td>
+      <td>{{item.pizza.price * item.quantity}}</td>
+      <td>
+        <button type="button" class="btn btn-outline-warning" (click)="removePizza(item.pizza)">-</button>
+      </td>
+      <td>
+        <button type="button" class="btn btn-outline-success" (click)="buyPizza(item.pizza)">+</button>
+      </td>
+      <td>
+        <button type="button" class="btn btn-outline-danger" (click)="removeAllPizza(item.pizza)">x</button>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+  <tr>
+    <th scope="row">Total : </th>
+    <td>{{total}}</td>
+  </tr>
+  </tfoot>
+</table>
+

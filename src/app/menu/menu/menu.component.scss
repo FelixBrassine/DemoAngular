@@ -1,0 +1,24 @@
+#mainMenu {
+  display: flex;
+  justify-content: space-around;
+}
+
+#pizzaMenu {
+  min-height: 67vh;
+  margin: 2%;
+  padding: 2% ;
+  background-color: rgb(212 232 212);
+  width: 50%;
+}
+
+#bag {
+  margin: 2%;
+  padding: 2% ;
+  background-color: rgb(212 232 212);
+  width: 50%;
+}
+
+tr *{
+  margin: auto;
+}
+

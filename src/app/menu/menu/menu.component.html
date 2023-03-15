@@ -1,11 +1,13 @@
-<div id="productList">
-  <h2>Pizza List</h2>
+<div id="mainMenu">
+    <div id="pizzaMenu">
+    <h4>Menu</h4>
     <table class="table table-striped">
       <thead>
       <tr>
         <th scope="col">Name</th>
         <th scope="col">Ingredients</th>
         <th scope="col">Price</th>
+        <th scope="col"></th>
       </tr>
       </thead>
       <tbody>
@@ -17,7 +19,14 @@
           </ul>
         </td>
         <td>{{item.price}}</td>
+        <td>
+          <button type="button" class="btn btn-outline-success" (click)="buyPizza(item)">€</button>
+        </td>
       </tr>
       </tbody>
     </table>
+  </div>
+  <div id="bag">
+    <app-bag></app-bag>
+  </div>
 </div>

@@ -9,6 +9,7 @@ import { StoreManagerComponent } from './store-manager/store-manager.component';
 import {MainComponent} from "./main/main.component";
 import { AddComponent } from './ingredients-manager/add/add.component';
 import { DeleteComponent } from './ingredients-manager/delete/delete.component';
+import {IngredientListService} from "./ingredient-list.service";
 
 @NgModule({
   declarations: [
@@ -24,6 +25,9 @@ import { DeleteComponent } from './ingredients-manager/delete/delete.component';
     CommonModule,
     FormsModule,
     InventoryRoutingModule
+  ],
+  providers:[
+    IngredientListService,
   ]
 })
 export class InventoryModule { }
